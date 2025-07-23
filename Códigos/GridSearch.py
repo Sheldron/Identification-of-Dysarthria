@@ -1,25 +1,11 @@
 import numpy as np
 import pandas as pd
-from scipy import stats
-from sklearn import datasets
-
 import time
-
-from sklearn import preprocessing
-from sklearn import decomposition
 from sklearn import model_selection
-from sklearn import metrics
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import classification_report
-from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score,f1_score,recall_score,make_scorer
-from InitializeDataframe import InitializeDataframe
-from SaveTrainTest import SaveTrainTestToCSV
 
 def ApplyGridSearch(classifiers):
     Xt = pd.read_csv(r'DataTrain\data_train.csv', usecols=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
@@ -49,11 +35,11 @@ def ApplyGridSearch(classifiers):
                 y_train, y_test = yt.values[train], yt.values[test]
 
             #treina
-            print("Começou o treino\n")
+            print("Começou o treino")
             clf_gcv.fit(X_train, np.ravel(y_train))
 
             #imprime melhores parâmetros
-            print(clf_gcv.best_params_)
+            #print(clf_gcv.best_params_)
 
             #realiza a predição
             y_pred = clf_gcv.predict(X_test)
@@ -62,10 +48,13 @@ def ApplyGridSearch(classifiers):
             st = time.time()-st
 
             #imprime metricas
-            print(run, clf_name, f1_score(y_test, y_pred, average='weighted'), \
-                        accuracy_score(y_test, y_pred), \
-                        recall_score(y_test, y_pred, average='weighted'), \
-                        clf_gcv.best_params_)
+            print(f"\nA iteração é {run}, o modelo é {clf_name}. \n \
+                        O f1 score é {f1_score(y_test, y_pred, average='weighted')}, \
+                        a acurácia é {accuracy_score(y_test, y_pred)}, \
+                        o recall score é {recall_score(y_test, y_pred, average='weighted')}. \n \
+                        O tempo decorrido foi {st} \n \
+                        Os melhores parâmetros são {clf_gcv.best_params_}")
+            print("\n====================================================\n")
 
             #armazena infromações em um dicionário
             l = {
@@ -104,10 +93,6 @@ classifiers = [
     #),
   ]
 
-data, label, x_train, x_test, y_train, y_test = InitializeDataframe()
-
-SaveTrainTestToCSV(data, x_train, x_test, y_train, y_test)
-
 ResultsGridSearch = ApplyGridSearch(classifiers)
 
 model = ['KNN', 'SVM'] #'RDF'
@@ -122,6 +107,9 @@ for i in range(len(model)):
     
     print(f"\nOs melhores parâmetros para o modelo {model[i]} são {bestParams[i]}\n")
     print(f"A acurácia do modelo é {acc[i]}\n")
+
+
+
 
 """ResultsKNN = ResultsGridSearch[ResultsGridSearch['MODEL'] == 'KNN']
 ResultsSVM = ResultsGridSearch[ResultsGridSearch['MODEL'] == 'SVM']

@@ -11,7 +11,6 @@ import matplotlib.pyplot as plt
 from os import listdir
 from os.path import isfile, join
 from python_speech_features import mfcc
-from InitializeDataframe import InitializeDataframe
 
 def ApplyClassificationAlgorithms():
     def ApplyAlgorithm(x_train, x_test, y_train, algorithm):
@@ -37,8 +36,11 @@ def ApplyClassificationAlgorithms():
     RandomForest = RandomForestClassifier()
     algorithms = [KNeighbors, SupportVectorMachine, RandomForest]
 
-    data, label, x_train, x_test, y_train, y_test = InitializeDataframe()
-
+    x_train = pd.read_csv(r'DataTrain\data_train.csv', usecols=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
+    y_train = pd.read_csv(r'DataTrain\data_train.csv', usecols=[14])
+    x_test = pd.read_csv(r'DataTrain\data_test.csv', usecols=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
+    y_test = pd.read_csv(r'DataTrain\data_test.csv', usecols=[14])
+    
     for algo in algorithms:
         y_pred = ApplyAlgorithm(x_train, x_test, y_train, algo)
         
