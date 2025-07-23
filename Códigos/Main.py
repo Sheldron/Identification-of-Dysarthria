@@ -1,0 +1,9 @@
+from LoadAudios import ConfigAudioFiles
+from GridSearch import DiscoverBestParams
+from SaveTrainTest import DefineTestAndTrainDF
+from ClassificationAlgorithms import ApplyClassificationAlgorithms
+
+ConfigAudioFiles()
+DiscoverBestParams()
+DefineTestAndTrainDF()
+ApplyClassificationAlgorithms()
