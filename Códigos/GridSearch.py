@@ -18,10 +18,10 @@ def DiscoverBestParams():
         for run in range(2):
             for name, clf_name, clf, clf_param_grid in classifiers:
 
-                #n_folds = 5
+                n_folds = 5
 
                 #instancia método de validação cruzada
-                #cv = model_selection.KFold(n_splits=n_folds, shuffle=True, random_state=run)
+                cv = model_selection.KFold(n_splits=n_folds, shuffle=True, random_state=run)
                 cv = model_selection.LeaveOneOut()
 
                 #instancia o Grid Search: classificador, grade de parâmetros, validacao cruzada, score
@@ -87,16 +87,16 @@ def DiscoverBestParams():
         {'kernel': ['linear','rbf'],'gamma':  [0.01,0.1,1],'C': [1,10,100]}#tipo de kernel e parametro de penalidade
         ),
 
-        #(
-        #'Random Forest','RDF',    RandomForestClassifier(),
-        #{'hidden_layer_sizes':[[5],[5,5],[5,5,5],[5,5,5,5],[10],[10,10],[10,10,10],[50]],
-        #'activation':['identity', 'logistic', 'tanh', 'relu']},
-        #),
+        (
+        'Random Forest','RDF',    RandomForestClassifier(),
+        {'n_estimators':[50, 100, 200],
+        'max_depth':[5, 10, None], "min_samples_split": [2, 8, 10]},
+        ),
     ]
 
     ResultsGridSearch = ApplyGridSearch(classifiers)
 
-    model = ['KNN', 'SVM'] #'RDF'
+    model = ['KNN', 'SVM', 'RDF']
     acc = []
     results = []
     bestParams = []

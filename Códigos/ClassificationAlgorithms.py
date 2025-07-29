@@ -11,8 +11,9 @@ import matplotlib.pyplot as plt
 from os import listdir
 from os.path import isfile, join
 from python_speech_features import mfcc
+from SaveTrainTest import DefineTestAndTrainDF
 
-def ApplyClassificationAlgorithms():
+def CtrClassificationAlgorithms():
     def ApplyAlgorithm(x_train, x_test, y_train, algorithm):
         classifier = algorithm
         classifier.fit(x_train, np.ravel(y_train))
@@ -35,6 +36,8 @@ def ApplyClassificationAlgorithms():
     SupportVectorMachine = svm.SVC()
     RandomForest = RandomForestClassifier()
     algorithms = [KNeighbors, SupportVectorMachine, RandomForest]
+    
+    DefineTestAndTrainDF()
 
     x_train = pd.read_csv(r'DataTrain\data_train.csv', usecols=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
     y_train = pd.read_csv(r'DataTrain\data_train.csv', usecols=[14])
@@ -48,4 +51,4 @@ def ApplyClassificationAlgorithms():
         
         print(f"A taxa de acertos do modelo {algo} é {accuracy} \n")
         
-ApplyClassificationAlgorithms()
+CtrClassificationAlgorithms()

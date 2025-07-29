@@ -1,9 +1,7 @@
 from LoadAudios import ConfigAudioFiles
 from GridSearch import DiscoverBestParams
-from SaveTrainTest import DefineTestAndTrainDF
-from ClassificationAlgorithms import ApplyClassificationAlgorithms
+from ClassificationAlgorithms import CtrClassificationAlgorithms
 
 ConfigAudioFiles()
 DiscoverBestParams()
-DefineTestAndTrainDF()
-ApplyClassificationAlgorithms()
+CtrClassificationAlgorithms()
