@@ -36,8 +36,6 @@ def CtrClassificationAlgorithms():
     SupportVectorMachine = svm.SVC()
     RandomForest = RandomForestClassifier()
     algorithms = [KNeighbors, SupportVectorMachine, RandomForest]
-    
-    DefineTestAndTrainDF()
 
     x_train = pd.read_csv(r'DataTrain\data_train.csv', usecols=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
     y_train = pd.read_csv(r'DataTrain\data_train.csv', usecols=[14])
