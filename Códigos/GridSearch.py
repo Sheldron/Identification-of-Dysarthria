@@ -15,7 +15,7 @@ def DiscoverBestParams():
         list_models=[]
 
         #mínimo 30 iterações
-        for run in range(2):
+        for run in range(5):
             for name, clf_name, clf, clf_param_grid in classifiers:
 
                 n_folds = 5
@@ -84,7 +84,7 @@ def DiscoverBestParams():
         
         (
         "SVM",'SVM',			SVC(),
-        {'kernel': ['linear','rbf'],'gamma':  [0.01,0.1,1],'C': [1,10,100]}#tipo de kernel e parametro de penalidade
+        {'kernel': ['rbf'],'gamma':  [0.01,0.1,1],'C': [1,10,100]} #tipo de kernel e parametro de penalidade
         ),
 
         (

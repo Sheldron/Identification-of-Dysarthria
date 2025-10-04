@@ -1,0 +1,633 @@
+index,DATASET,MODEL,RUN,BEST_PARAMS,TIME,Y_TRUE,Y_PRED,F1,ACCURACY,RECALL
+0,Dysarthria,KNN,0,"{'n_neighbors': 10, 'weights': 'distance'}",0.8611452579498291,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.7680480463193228,0.7780141843971631,0.7780141843971631
+1,Dysarthria,SVM,0,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",52.8815381526947,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5233996223962151,0.6574468085106383,0.6574468085106383
+2,Dysarthria,RDF,0,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",26.116452932357788,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.9039805726201894,0.9053191489361702,0.9053191489361702
+3,Dysarthria,KNN,1,"{'n_neighbors': 10, 'weights': 'distance'}",0.4641764163970947,"[['Control']
+ ['Dysarthric']
+ ['Dysarthric']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Dysarthric' 'Dysarthric' ... 'Control' 'Control' 'Dysarthric'],0.7723233429938031,0.7822695035460993,0.7822695035460993
+4,Dysarthria,SVM,1,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",57.45049691200256,"[['Control']
+ ['Dysarthric']
+ ['Dysarthric']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Dysarthric' ... 'Control' 'Control' 'Control'],0.5119923767778322,0.6478723404255319,0.6478723404255319
+5,Dysarthria,RDF,1,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",21.85854458808899,"[['Control']
+ ['Dysarthric']
+ ['Dysarthric']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]","['Control' 'Dysarthric' 'Dysarthric' ... 'Dysarthric' 'Control'
+ 'Dysarthric']",0.9124556393967431,0.9134751773049645,0.9134751773049645
+6,Dysarthria,KNN,2,"{'n_neighbors': 10, 'weights': 'distance'}",0.41099071502685547,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.7787061293587667,0.7886524822695036,0.7886524822695036
+7,Dysarthria,SVM,2,"{'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}",44.75456953048706,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5231225912873169,0.6578014184397163,0.6578014184397163
+8,Dysarthria,RDF,2,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",22.827574968338013,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.9090213824629977,0.9099290780141844,0.9099290780141844
+9,Dysarthria,KNN,3,"{'n_neighbors': 10, 'weights': 'distance'}",0.4216146469116211,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Dysarthric'],0.7839871122201603,0.7907801418439716,0.7907801418439716
+10,Dysarthria,SVM,3,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",55.04916477203369,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5250132861193075,0.6595744680851063,0.6595744680851063
+11,Dysarthria,RDF,3,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}",20.629766702651978,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Dysarthric'],0.9034186358139688,0.9042553191489362,0.9042553191489362
+12,Dysarthria,KNN,4,"{'n_neighbors': 10, 'weights': 'distance'}",0.4612090587615967,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.7614340528637606,0.7716312056737589,0.7716312056737589
+13,Dysarthria,SVM,4,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",58.46026372909546,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.4879853276208651,0.6304964539007092,0.6304964539007092
+14,Dysarthria,RDF,4,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",21.900721073150635,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Control'],0.905207686024358,0.9063829787234042,0.9063829787234042
+15,Dysarthria,KNN,5,"{'n_neighbors': 10, 'weights': 'distance'}",0.41189026832580566,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Control' 'Dysarthric' 'Control'],0.7695498755851822,0.7812056737588653,0.7812056737588653
+16,Dysarthria,SVM,5,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",52.29332089424133,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5115141071283675,0.648936170212766,0.648936170212766
+17,Dysarthria,RDF,5,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",21.961278676986694,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Control'],0.9064135961412014,0.9078014184397163,0.9078014184397163
+18,Dysarthria,KNN,6,"{'n_neighbors': 10, 'weights': 'distance'}",0.4063258171081543,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Dysarthric' 'Control' 'Dysarthric'],0.7705003302783094,0.7808510638297872,0.7808510638297872
+19,Dysarthria,SVM,6,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",52.84512543678284,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.4978836559777588,0.6372340425531915,0.6372340425531915
+20,Dysarthria,RDF,6,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}",20.659054279327393,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Dysarthric' 'Control' 'Dysarthric'],0.9057077801310877,0.9067375886524822,0.9067375886524822
+21,Dysarthria,KNN,7,"{'n_neighbors': 10, 'weights': 'distance'}",0.48631763458251953,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.7658674144179631,0.774822695035461,0.774822695035461
+22,Dysarthria,SVM,7,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",47.49036383628845,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5300739559282455,0.6638297872340425,0.6638297872340425
+23,Dysarthria,RDF,7,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",22.13718056678772,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.9024026059676015,0.9035460992907801,0.9035460992907801
+24,Dysarthria,KNN,8,"{'n_neighbors': 10, 'weights': 'distance'}",0.3641228675842285,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Dysarthric'],0.7661619077489114,0.776595744680851,0.776595744680851
+25,Dysarthria,SVM,8,"{'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}",52.60317659378052,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5024927917451864,0.6414893617021277,0.6414893617021277
+26,Dysarthria,RDF,8,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 50}",21.80475687980652,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Dysarthric'],0.9004622336058988,0.9014184397163121,0.9014184397163121
+27,Dysarthria,KNN,9,"{'n_neighbors': 10, 'weights': 'distance'}",0.5691945552825928,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Dysarthric' ... 'Control' 'Dysarthric' 'Dysarthric'],0.780870345904479,0.7897163120567375,0.7897163120567375
+28,Dysarthria,SVM,9,"{'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}",69.04703640937805,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5163694342500734,0.6524822695035462,0.6524822695035462
+29,Dysarthria,RDF,9,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",26.11174702644348,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Dysarthric' ... 'Control' 'Control' 'Dysarthric'],0.9092848021998029,0.9099290780141844,0.9099290780141844
+30,Dysarthria,KNN,10,"{'n_neighbors': 10, 'weights': 'distance'}",0.6167917251586914,"[['Dysarthric']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Dysarthric' 'Control' 'Dysarthric' ... 'Control' 'Dysarthric' 'Control'],0.7709755643040391,0.7815602836879433,0.7815602836879433
+31,Dysarthria,SVM,10,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",62.42307090759277,"[['Dysarthric']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5205024483410002,0.6560283687943262,0.6560283687943262
+32,Dysarthria,RDF,10,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",25.821135997772217,"[['Dysarthric']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Dysarthric' 'Control' 'Dysarthric' ... 'Control' 'Dysarthric' 'Control'],0.8982302894147408,0.899645390070922,0.899645390070922
+33,Dysarthria,KNN,11,"{'n_neighbors': 10, 'weights': 'distance'}",0.521336555480957,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Control'],0.7759210145418979,0.7861702127659574,0.7861702127659574
+34,Dysarthria,SVM,11,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",58.004711389541626,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.51224704122372,0.648936170212766,0.648936170212766
+35,Dysarthria,RDF,11,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",26.024757146835327,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.9107321353668228,0.9113475177304965,0.9113475177304965
+36,Dysarthria,KNN,12,"{'n_neighbors': 10, 'weights': 'distance'}",0.599998950958252,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Dysarthric' 'Control' 'Dysarthric'],0.7750904156794581,0.7851063829787234,0.7851063829787234
+37,Dysarthria,SVM,12,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",65.07664346694946,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5169017577441051,0.6531914893617021,0.6531914893617021
+38,Dysarthria,RDF,12,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",25.81320285797119,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.9110038517952592,0.9117021276595745,0.9117021276595745
+39,Dysarthria,KNN,13,"{'n_neighbors': 10, 'weights': 'distance'}",0.8050405979156494,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Dysarthric' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.7708465621016187,0.7804964539007092,0.7804964539007092
+40,Dysarthria,SVM,13,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",68.62983727455139,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.4984068782801221,0.6379432624113475,0.6379432624113475
+41,Dysarthria,RDF,13,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",27.78719711303711,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Dysarthric' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.9121295701588719,0.9131205673758865,0.9131205673758865
+42,Dysarthria,KNN,14,"{'n_neighbors': 10, 'weights': 'distance'}",0.5174040794372559,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Dysarthric']
+ ['Control']]",['Dysarthric' 'Control' 'Control' ... 'Dysarthric' 'Dysarthric' 'Control'],0.768223331119518,0.7776595744680851,0.7776595744680851
+43,Dysarthria,SVM,14,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",71.48774123191833,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5077705625054318,0.6453900709219859,0.6453900709219859
+44,Dysarthria,RDF,14,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",29.00307869911194,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Dysarthric']
+ ['Control']]",['Dysarthric' 'Control' 'Control' ... 'Dysarthric' 'Dysarthric' 'Control'],0.9086603108812344,0.9095744680851063,0.9095744680851063
+45,Dysarthria,KNN,15,"{'n_neighbors': 10, 'weights': 'distance'}",0.5462260246276855,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.7816544702511399,0.7897163120567375,0.7897163120567375
+46,Dysarthria,SVM,15,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",73.009042263031,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.510169716650605,0.6478723404255319,0.6478723404255319
+47,Dysarthria,RDF,15,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",28.734644889831543,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.9161967903620885,0.9170212765957447,0.9170212765957447
+48,Dysarthria,KNN,16,"{'n_neighbors': 10, 'weights': 'distance'}",0.5516819953918457,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Dysarthric'],0.7681792627697446,0.7794326241134751,0.7794326241134751
+49,Dysarthria,SVM,16,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",70.56346607208252,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5186177073399816,0.6542553191489362,0.6542553191489362
+50,Dysarthria,RDF,16,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",26.92745566368103,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Dysarthric'],0.8977501731996512,0.8992907801418439,0.8992907801418439
+51,Dysarthria,KNN,17,"{'n_neighbors': 10, 'weights': 'distance'}",0.5123038291931152,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Control' 'Dysarthric' 'Control'],0.7780524375594136,0.7872340425531915,0.7872340425531915
+52,Dysarthria,SVM,17,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",64.86750411987305,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5258308338398348,0.6599290780141844,0.6599290780141844
+53,Dysarthria,RDF,17,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",27.280781745910645,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Control'],0.9070604107943475,0.9081560283687943,0.9081560283687943
+54,Dysarthria,KNN,18,"{'n_neighbors': 10, 'weights': 'distance'}",0.5831217765808105,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Dysarthric' 'Control' 'Control' ... 'Dysarthric' 'Control' 'Dysarthric'],0.7701052264588609,0.7801418439716312,0.7801418439716312
+55,Dysarthria,SVM,18,"{'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}",60.610944747924805,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5067948089883771,0.6443262411347518,0.6443262411347518
+56,Dysarthria,RDF,18,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",26.01435351371765,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Dysarthric' 'Control' 'Control' ... 'Dysarthric' 'Control' 'Dysarthric'],0.8933008561365504,0.8946808510638298,0.8946808510638298
+57,Dysarthria,KNN,19,"{'n_neighbors': 10, 'weights': 'distance'}",0.5562777519226074,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.778104456419143,0.7865248226950354,0.7865248226950354
+58,Dysarthria,SVM,19,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",73.12922191619873,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5132265431942254,0.65,0.65
+59,Dysarthria,RDF,19,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",27.746851921081543,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.9053864275594465,0.9063829787234042,0.9063829787234042
+60,Dysarthria,KNN,20,"{'n_neighbors': 10, 'weights': 'distance'}",0.5119385719299316,"[['Dysarthric']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Control']]","['Dysarthric' 'Control' 'Dysarthric' ... 'Dysarthric' 'Control'
+ 'Dysarthric']",0.7808717033090675,0.7893617021276595,0.7893617021276595
+61,Dysarthria,SVM,20,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",70.2433910369873,"[['Dysarthric']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Dysarthric' ... 'Control' 'Control' 'Control'],0.51224704122372,0.648936170212766,0.648936170212766
+62,Dysarthria,RDF,20,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",27.081015586853027,"[['Dysarthric']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Control']]",['Dysarthric' 'Control' 'Dysarthric' ... 'Dysarthric' 'Control' 'Control'],0.9028802625622454,0.9042553191489362,0.9042553191489362
+63,Dysarthria,KNN,21,"{'n_neighbors': 6, 'weights': 'distance'}",0.5574624538421631,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Dysarthric' 'Dysarthric' 'Control'],0.7765193965489198,0.7836879432624113,0.7836879432624113
+64,Dysarthria,SVM,21,"{'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}",61.02461099624634,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Control'],0.49404172194715107,0.6347517730496454,0.6347517730496454
+65,Dysarthria,RDF,21,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",27.875468015670776,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Dysarthric' 'Dysarthric' 'Control'],0.9056725194326802,0.9067375886524822,0.9067375886524822
+66,Dysarthria,KNN,22,"{'n_neighbors': 10, 'weights': 'distance'}",0.48471879959106445,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Dysarthric' ... 'Control' 'Control' 'Control'],0.773354346858178,0.7822695035460993,0.7822695035460993
+67,Dysarthria,SVM,22,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",71.9464430809021,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5113508437270726,0.64822695035461,0.64822695035461
+68,Dysarthria,RDF,22,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}",24.50473713874817,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Dysarthric' ... 'Control' 'Control' 'Control'],0.9103429129636272,0.9113475177304965,0.9113475177304965
+69,Dysarthria,KNN,23,"{'n_neighbors': 6, 'weights': 'distance'}",0.5203478336334229,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Control'],0.7877956746852014,0.7925531914893617,0.7925531914893617
+70,Dysarthria,SVM,23,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",66.09058332443237,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5335256715363109,0.6659574468085107,0.6659574468085107
+71,Dysarthria,RDF,23,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",28.58239436149597,"[['Control']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Control'],0.9193203881758953,0.9198581560283688,0.9198581560283688
+72,Dysarthria,KNN,24,"{'n_neighbors': 10, 'weights': 'distance'}",12.880201578140259,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.7680309232569172,0.7769503546099291,0.7769503546099291
+73,Dysarthria,SVM,24,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",73.64709258079529,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5202464316732511,0.6549645390070922,0.6549645390070922
+74,Dysarthria,RDF,24,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",28.09530520439148,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.914477804264498,0.9152482269503546,0.9152482269503546
+75,Dysarthria,KNN,25,"{'n_neighbors': 10, 'weights': 'distance'}",0.5890936851501465,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Control'],0.7694953411489446,0.7790780141843971,0.7790780141843971
+76,Dysarthria,SVM,25,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",69.98575615882874,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5020469689404908,0.6411347517730497,0.6411347517730497
+77,Dysarthria,RDF,25,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",29.289534330368042,"[['Control']
+ ['Control']
+ ['Dysarthric']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Control']]",['Control' 'Control' 'Dysarthric' ... 'Control' 'Dysarthric' 'Control'],0.8932046428848207,0.8950354609929078,0.8950354609929078
+78,Dysarthria,KNN,26,"{'n_neighbors': 10, 'weights': 'distance'}",0.6229050159454346,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Dysarthric' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Dysarthric'],0.7851785314588074,0.7936170212765957,0.7936170212765957
+79,Dysarthria,SVM,26,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",75.0209891796112,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5159201142904176,0.652127659574468,0.652127659574468
+80,Dysarthria,RDF,26,"{'max_depth': None, 'min_samples_split': 8, 'n_estimators': 200}",27.664347171783447,"[['Dysarthric']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Dysarthric']
+ ['Dysarthric']]",['Dysarthric' 'Control' 'Control' ... 'Control' 'Dysarthric' 'Dysarthric'],0.915825817256539,0.9166666666666666,0.9166666666666666
+81,Dysarthria,KNN,27,"{'n_neighbors': 10, 'weights': 'distance'}",0.5969085693359375,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Dysarthric' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Control'],0.7673502933304496,0.7776595744680851,0.7776595744680851
+82,Dysarthria,SVM,27,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",75.47846341133118,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Dysarthric' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5115141071283675,0.648936170212766,0.648936170212766
+83,Dysarthria,RDF,27,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",27.515474557876587,"[['Dysarthric']
+ ['Dysarthric']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Control']]",['Dysarthric' 'Dysarthric' 'Control' ... 'Control' 'Control' 'Control'],0.9034474239830619,0.9046099290780142,0.9046099290780142
+84,Dysarthria,KNN,28,"{'n_neighbors': 6, 'weights': 'distance'}",0.5370759963989258,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.7847465584922814,0.7904255319148936,0.7904255319148936
+85,Dysarthria,SVM,28,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",68.84251880645752,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.5212336546366045,0.6560283687943262,0.6560283687943262
+86,Dysarthria,RDF,28,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}",26.170458555221558,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Control']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Dysarthric'],0.9139482274107951,0.9148936170212766,0.9148936170212766
+87,Dysarthria,KNN,29,"{'n_neighbors': 10, 'weights': 'distance'}",0.5543770790100098,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Dysarthric' 'Control' 'Dysarthric'],0.7859623718314237,0.7936170212765957,0.7936170212765957
+88,Dysarthria,SVM,29,"{'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}",76.15214204788208,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Control' 'Control' 'Control'],0.52238894138023,0.6578014184397163,0.6578014184397163
+89,Dysarthria,RDF,29,"{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 200}",28.066132307052612,"[['Control']
+ ['Control']
+ ['Control']
+ ...
+ ['Dysarthric']
+ ['Control']
+ ['Dysarthric']]",['Control' 'Control' 'Control' ... 'Dysarthric' 'Control' 'Dysarthric'],0.9006520230939513,0.9014184397163121,0.9014184397163121

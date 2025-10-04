@@ -1,0 +1,52 @@
+Todas as informações de cada ieracao com os melhores parametros: 
+       DATASET MODEL  RUN                                 BEST_PARAMS      TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+12  Dysarthria   KNN    4  {'n_neighbors': 10, 'weights': 'distance'}  0.461209  [['Control']\n ['Control']\n ['Control']\n ......  ['Control' 'Control' 'Control' ... 'Control' '...  0.761434  0.771631  0.771631       DATASET MODEL  RUN                                 BEST_PARAMS      TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+12  Dysarthria   KNN    4  {'n_neighbors': 10, 'weights': 'distance'}  0.461209  [['Control']\n ['Control']\n ['Control']\n ......  ['Control' 'Control' 'Control' ... 'Control' '...  0.761434  0.771631  0.771631       DATASET MODEL  RUN                                 BEST_PARAMS      TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+12  Dysarthria   KNN    4  {'n_neighbors': 10, 'weights': 'distance'}  0.461209  [['Control']\n ['Control']\n ['Control']\n ......  ['Control' 'Control' 'Control' ... 'Control' '...  0.761434  0.771631  0.771631
+===============================================
+       DATASET MODEL  RUN                                BEST_PARAMS       TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+13  Dysarthria   SVM    4  {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}  58.460264  [['Control']\n ['Control']\n ['Control']\n ......  ['Control' 'Control' 'Control' ... 'Control' '...  0.487985  0.630496  0.630496       DATASET MODEL  RUN                                BEST_PARAMS       TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+13  Dysarthria   SVM    4  {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}  58.460264  [['Control']\n ['Control']\n ['Control']\n ......  ['Control' 'Control' 'Control' ... 'Control' '...  0.487985  0.630496  0.630496       DATASET MODEL  RUN                                BEST_PARAMS       TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+13  Dysarthria   SVM    4  {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}  58.460264  [['Control']\n ['Control']\n ['Control']\n ......  ['Control' 'Control' 'Control' ... 'Control' '...  0.487985  0.630496  0.630496
+===============================================
+       DATASET MODEL  RUN                                        BEST_PARAMS       TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+77  Dysarthria   RDF   25  {'max_depth': None, 'min_samples_split': 2, 'n...  29.289534  [['Control']\n ['Control']\n ['Dysarthric']\n ...  ['Control' 'Control' 'Dysarthric' ... 'Control...  0.893205  0.895035  0.895035       DATASET MODEL  RUN                                        BEST_PARAMS       TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+56  Dysarthria   RDF   18  {'max_depth': None, 'min_samples_split': 2, 'n...  26.014354  [['Dysarthric']\n ['Control']\n ['Control']\n ...  ['Dysarthric' 'Control' 'Control' ... 'Dysarth...  0.893301  0.894681  0.894681       DATASET MODEL  RUN                                        BEST_PARAMS       TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
+56  Dysarthria   RDF   18  {'max_depth': None, 'min_samples_split': 2, 'n...  26.014354  [['Dysarthric']\n ['Control']\n ['Control']\n ...  ['Dysarthric' 'Control' 'Control' ... 'Dysarth...  0.893301  0.894681  0.894681
+===============================================
+
+Media e Desvio Padrao por metrica: 
+
+A media de F1 para o modelo KNN eh 0.774463547993856 
+O desvio padrao de F1 para o modelo KNN eh 0.00705802036203023 
+
+A media de ACCURACY para o modelo SVM eh 0.7835933806146572 
+O desvio padrao de ACCURACY para o modelo SVM eh 0.0059853697401148495 
+
+A media de RECALL para o modelo RDF eh 0.7835933806146572 
+O desvio padrao de RECALL para o modelo RDF eh 0.0059853697401148495 
+
+
+===============================================
+A media de F1 para o modelo KNN eh 0.513494364794073 
+O desvio padrao de F1 para o modelo KNN eh 0.010661963209191027 
+
+A media de ACCURACY para o modelo SVM eh 0.650130023640662 
+O desvio padrao de ACCURACY para o modelo SVM eh 0.008492523383063551 
+
+A media de RECALL para o modelo RDF eh 0.650130023640662 
+O desvio padrao de RECALL para o modelo RDF eh 0.008492523383063551 
+
+
+===============================================
+A media de F1 para o modelo KNN eh 0.9066192590686992 
+O desvio padrao de F1 para o modelo KNN eh 0.006510313088646416 
+
+A media de ACCURACY para o modelo SVM eh 0.9076595744680851 
+O desvio padrao de ACCURACY para o modelo SVM eh 0.006293770793109887 
+
+A media de RECALL para o modelo RDF eh 0.9076595744680851 
+O desvio padrao de RECALL para o modelo RDF eh 0.006293770793109887 
+
+
+===============================================
