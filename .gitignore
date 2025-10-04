@@ -1,4 +1,8 @@
-00 Artigos para leitura/
+#Pastas de documetos pessoais relacionados ao projeto
+000 Artigos para leitura/
 000 Documentos/
+00 Arquivos em pdf/
+
+#Arquivos temporários ou de teste
 BibliotecasUteis.txt
 __pycache__
