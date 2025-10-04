@@ -20,7 +20,7 @@ def AnalyzeGridSearchResults():
 
     def GetBestParams(df, scores):
         f = OpenFile(pathFile)
-        f.write("Todas as informações de cada ieracao com os melhores parametros: \n")
+        f.write("Todas as informações de cada iteracao com os melhores parametros: \n")
         
         for m in df:
             for s in scores:
@@ -34,10 +34,10 @@ def AnalyzeGridSearchResults():
         f = OpenFile(pathFile)
         f.write("\nMedia e Desvio Padrao por metrica: \n\n")
         
-        for m in df:
+        for contador, m in enumerate(df):
             for s in range(len(scores)):
-                f.write(str(f"A media de {scores[s]} para o modelo {models[s]} eh {m[scores[s]].mean()} \n"))
-                f.write(str(f"O desvio padrao de {scores[s]} para o modelo {models[s]} eh {m[scores[s]].std()} \n\n"))
+                f.write(str(f"A media de {scores[s]} para o modelo {models[contador]} eh {m[scores[s]].mean()} \n"))
+                f.write(str(f"O desvio padrao de {scores[s]} para o modelo {models[contador]} eh {m[scores[s]].std()} \n\n"))
             
             f.write(f"\n===============================================\n")
         

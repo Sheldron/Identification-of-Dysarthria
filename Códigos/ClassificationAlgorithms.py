@@ -45,7 +45,7 @@ def CalculateScores(y_test, y_pred):
 def SaveResults(pathFile, algo, scores, contador):
     f = OpenFile(pathFile)
             
-    f.write(f"Para o modelo {algo}, o F1 score é {scores[contador][0]} \nA accuracy é {scores[contador][1]} \nO recall score é {scores[contador][2]}\n")
+    f.write(f"Para o modelo {algo}, \nO F1 score eh {scores[contador][0]} \nA accuracy eh {scores[contador][1]} \nO recall score eh {scores[contador][2]}\n")
     f.write("\n=================================================\n")
             
     CloseFile(f)

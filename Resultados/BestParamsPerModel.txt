@@ -1,4 +1,4 @@
-Todas as informações de cada ieracao com os melhores parametros: 
+Todas as informações de cada iteracao com os melhores parametros: 
        DATASET MODEL  RUN                                 BEST_PARAMS      TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
 12  Dysarthria   KNN    4  {'n_neighbors': 10, 'weights': 'distance'}  0.461209  [['Control']\n ['Control']\n ['Control']\n ......  ['Control' 'Control' 'Control' ... 'Control' '...  0.761434  0.771631  0.771631       DATASET MODEL  RUN                                 BEST_PARAMS      TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
 12  Dysarthria   KNN    4  {'n_neighbors': 10, 'weights': 'distance'}  0.461209  [['Control']\n ['Control']\n ['Control']\n ......  ['Control' 'Control' 'Control' ... 'Control' '...  0.761434  0.771631  0.771631       DATASET MODEL  RUN                                 BEST_PARAMS      TIME                                             Y_TRUE                                             Y_PRED        F1  ACCURACY    RECALL
@@ -20,30 +20,30 @@ Media e Desvio Padrao por metrica:
 A media de F1 para o modelo KNN eh 0.774463547993856 
 O desvio padrao de F1 para o modelo KNN eh 0.00705802036203023 
 
-A media de ACCURACY para o modelo SVM eh 0.7835933806146572 
-O desvio padrao de ACCURACY para o modelo SVM eh 0.0059853697401148495 
+A media de ACCURACY para o modelo KNN eh 0.7835933806146572 
+O desvio padrao de ACCURACY para o modelo KNN eh 0.0059853697401148495 
 
-A media de RECALL para o modelo RDF eh 0.7835933806146572 
-O desvio padrao de RECALL para o modelo RDF eh 0.0059853697401148495 
+A media de RECALL para o modelo KNN eh 0.7835933806146572 
+O desvio padrao de RECALL para o modelo KNN eh 0.0059853697401148495 
 
 
 ===============================================
-A media de F1 para o modelo KNN eh 0.513494364794073 
-O desvio padrao de F1 para o modelo KNN eh 0.010661963209191027 
+A media de F1 para o modelo SVM eh 0.513494364794073 
+O desvio padrao de F1 para o modelo SVM eh 0.010661963209191027 
 
 A media de ACCURACY para o modelo SVM eh 0.650130023640662 
 O desvio padrao de ACCURACY para o modelo SVM eh 0.008492523383063551 
 
-A media de RECALL para o modelo RDF eh 0.650130023640662 
-O desvio padrao de RECALL para o modelo RDF eh 0.008492523383063551 
+A media de RECALL para o modelo SVM eh 0.650130023640662 
+O desvio padrao de RECALL para o modelo SVM eh 0.008492523383063551 
 
 
 ===============================================
-A media de F1 para o modelo KNN eh 0.9066192590686992 
-O desvio padrao de F1 para o modelo KNN eh 0.006510313088646416 
+A media de F1 para o modelo RDF eh 0.9066192590686992 
+O desvio padrao de F1 para o modelo RDF eh 0.006510313088646416 
 
-A media de ACCURACY para o modelo SVM eh 0.9076595744680851 
-O desvio padrao de ACCURACY para o modelo SVM eh 0.006293770793109887 
+A media de ACCURACY para o modelo RDF eh 0.9076595744680851 
+O desvio padrao de ACCURACY para o modelo RDF eh 0.006293770793109887 
 
 A media de RECALL para o modelo RDF eh 0.9076595744680851 
 O desvio padrao de RECALL para o modelo RDF eh 0.006293770793109887 
