@@ -24,7 +24,7 @@ def AnalyzeGridSearchResults():
         
         for m in df:
             for s in scores:
-                f.write(str(m.loc[m[s] == m[s].min()]))
+                f.write(str(m.loc[m[s] == m[s].max()]))
         
             f.write(f"\n===============================================\n")
                 
