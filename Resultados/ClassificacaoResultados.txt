@@ -1,0 +1,15 @@
+Para o modelo KNeighborsClassifier(n_neighbors=10, weights='distance'), o F1 score é 0.7800384559299102 
+A accuracy é 0.78678763821945 
+O recall score é 0.78678763821945
+
+=================================================
+Para o modelo SVC(C=10, gamma=0.01), o F1 score é 0.5320649059439145 
+A accuracy é 0.664303941026368 
+O recall score é 0.664303941026368
+
+=================================================
+Para o modelo RandomForestClassifier(n_estimators=200), o F1 score é 0.9138818257900371 
+A accuracy é 0.9146583498724128 
+O recall score é 0.9146583498724128
+
+=================================================

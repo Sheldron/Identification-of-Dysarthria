@@ -1,18 +1,9 @@
-import numpy as np
 import pandas as pd
+from CtrFiles import ClearFile, OpenFile, CloseFile
 
-def AnalyzeGridSearchResults():
-    def ClearFile():
-        f = open(r"ResultadosGridSearch\BestParamsPerModel.txt", "w")
-        f.close
-    
-    def OpenFile():        
-        f = open(r"ResultadosGridSearch\BestParamsPerModel.txt", "a")
-        
-        return f
-        
+def AnalyzeGridSearchResults(): 
     def OpenDataFrame():
-        results = pd.read_csv(r'ResultadosGridSearch\ResultadosGrisSearch.csv')
+        results = pd.read_csv(r'Resultados\ResultadosGrisSearch.csv')
 
         results = results.drop('index', axis=1)
         
@@ -28,7 +19,7 @@ def AnalyzeGridSearchResults():
         return resultsModels
 
     def GetBestParams(df, scores):
-        f = OpenFile()
+        f = OpenFile(pathFile)
         f.write("Todas as informações de cada ieracao com os melhores parametros: \n")
         
         for m in df:
@@ -37,10 +28,10 @@ def AnalyzeGridSearchResults():
         
             f.write(f"\n===============================================\n")
                 
-        f.close()
+        CloseFile(f)
         
     def GetInfoScores(df, models, scores):
-        f = OpenFile()
+        f = OpenFile(pathFile)
         f.write("\nMedia e Desvio Padrao por metrica: \n\n")
         
         for m in df:
@@ -50,10 +41,12 @@ def AnalyzeGridSearchResults():
             
             f.write(f"\n===============================================\n")
         
-        f.close()
+        CloseFile(f)
     
-    ClearFile()
-        
+    pathFile = r"Resultados\BestParamsPerModel.txt"
+    
+    ClearFile(pathFile)
+    
     results = OpenDataFrame()
     
     resultsModels = SplitDfPerModel(results)

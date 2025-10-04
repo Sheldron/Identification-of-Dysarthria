@@ -110,15 +110,3 @@ def DiscoverBestParams():
         print(f"A acurácia do modelo é {acc[i]}\n")
 
 DiscoverBestParams()
-
-"""ResultsKNN = ResultsGridSearch[ResultsGridSearch['MODEL'] == 'KNN']
-ResultsSVM = ResultsGridSearch[ResultsGridSearch['MODEL'] == 'SVM']
-ResultsRDF = ResultsGridSearch[ResultsGridSearch['MODEL'] == 'RDF']
-
-AccKNN = ResultsKNN['ACCURACY'].mean()
-AccSVM = ResultsSVM['ACCURACY'].mean()
-AccRDF = ResultsRDF['ACCURACY'].mean()
-
-BestParamsKNN = ResultsKNN[ResultsKNN.index == 2]["BEST_PARAMS"].values
-BestParamsSVM = ResultsSVM[ResultsSVM.index == 2]["BEST_PARAMS"].values
-BestParamsRDF = ResultsRDF[ResultsRDF.index == 2]["BEST_PARAMS"].values"""
