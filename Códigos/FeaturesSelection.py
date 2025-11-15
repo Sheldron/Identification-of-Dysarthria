@@ -41,5 +41,3 @@ for s in selectors:
     
     print(selectedFeatues)
 
-
-
