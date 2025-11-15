@@ -1,9 +1,9 @@
 import numpy as np
-import pandas as pd
 from sklearn.feature_selection import SelectKBest, SelectPercentile, SelectFpr, SelectFdr, SelectFwe
 from sklearn.feature_selection import f_classif
 from InitializeDataframe import LoadDataframe
 from FormatPrintText import BreakLine
+from CtrFiles import ClearFile, OpenFile, CloseFile, BreakLineFile
 
 def PrepareDf():
     dataPath = r'data\temporal_features_tsfel.csv'
@@ -16,9 +16,11 @@ def ConfigSelectors():
     kBest = SelectKBest(f_classif, k=3)
     percentile = SelectPercentile(f_classif, percentile=20)
     fpr = SelectFpr(f_classif, alpha=0.05)
-    #fdr = SelectFdr(f_classif, alpha=0.01)
-    #fwe = SelectFwe(f_classif, alpha=0.01)
-    selectors = [kBest, percentile, fpr]
+    fdr = SelectFdr(f_classif, alpha=0.05)
+    fwe = SelectFwe(f_classif, alpha=0.05)
+    #selectors = [kBest, percentile]
+    #selectors = [fpr, fdr, fwe]
+    selectors = [kBest, percentile, fpr, fdr, fwe]
     
     return selectors
 
@@ -29,15 +31,26 @@ def ApplySelector(selector):
     
     return selectedFeatues.tolist()
 
-data, label = PrepareDf()
-selectors = ConfigSelectors()
-selectedFeatues = []
-
-for s in selectors:
-    BreakLine()
-    print(f"Iniciando seleção do método {s} \n")
-    data_new = s.fit_transform(data, np.ravel(label))
-    selectedFeatues.append(ApplySelector(s))
+def SelectFeatures():
+    pathFile = r"Resultados\BestFeatures.txt"
+    ClearFile(pathFile)
     
-    print(selectedFeatues)
+    data, label = PrepareDf()
+    selectors = ConfigSelectors()
 
+    for s in selectors:
+        BreakLine()
+        print(f"Rodando método {s} \n")
+        data_new = s.fit_transform(data, np.ravel(label))
+        selectedFeatues = ApplySelector(s)
+        
+        f = OpenFile(pathFile)
+        f.write(str(f"Selecao do metodo {s} \n"))
+        f.write(str(f"As features sao {selectedFeatues} \n"))
+        BreakLineFile(f)
+        
+        CloseFile(f)
+        
+        print(f"Seleção concluída para o método {s}")
+        
+SelectFeatures()

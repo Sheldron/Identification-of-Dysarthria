@@ -9,3 +9,6 @@ def OpenFile(path):
 
 def CloseFile(file):
     file.close
+
+def BreakLineFile(file):
+    file.write(f"\n========================================================================\n")
